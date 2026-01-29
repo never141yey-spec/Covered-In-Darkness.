@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+
+
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+.header {
+  padding: 30px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-center a {
+  margin: 0 24px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.nav-center a:hover {
+  opacity: 1;
+}
+
+
+.lang {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    border-top: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.payments img {
+    height: 20px;
+    margin: 0 5px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #fafafa;
+    text-decoration: none;
+}
+.tshirt-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 300px; /* ОПУСТИТЬ НИЖЕ */
+}
+
+
+.tshirt {
+    position: relative;
+    width: 500px;
+    cursor: pointer;
+}
+
+.tshirt img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+    border-radius: 10px;
+}
+
+.tshirt .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(1.02);
+}
+
+.tshirt:hover .front {
+    opacity: 0;
+    transform: scale(1.02);
+}
+
+.tshirt:hover .back {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+.tshirt:hover img {
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+}
+
+.active {
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+
+}
+.tshirt-link {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.tshirt:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+.tshirt-link {
+    display: block;
+}
+
+
+
+    </style>
+</head>
+<body>
+<!-- HEADER -->
+<header class="header">
+  <nav class="nav">
+    <div class="nav-center">
+      <a href="Website.html">Главная</a>
+      <a href="Website2.html">Каталог</a>
+      <a href="Website3.html">Контакты для покупки</a>
+    </div>
+  </nav>
+</header>   
+
+<main class="content">
+    <div class="tshirt-wrapper">
+
+        <a href="Website2.html" class="tshirt-link">
+            <div class="tshirt">
+                <img src="face.png" alt="T-shirt front" class="front">
+                <img src="back.png" alt="T-shirt back" class="back">
+            </div>
+        </a>
+
+    </div>
+</main>
+
+
+<footer class="footer">
+    <div class="payments">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="AmEx">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+    </div>
+
+    <div class="footer-links">
+        © 2026, covered in darkness ·
+        <a href="#">Privacy policy</a> ·
+        <a href="#">Terms of service</a> ·
+        <a href="#">Refund policy</a>
+    </div>
+</footer>
+
+</body>
+</html>

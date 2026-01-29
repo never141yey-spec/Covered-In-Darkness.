@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Каталог – Never</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff; /* Белый текст */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+.header {
+  padding: 30px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-center a {
+  margin: 0 24px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.nav-center a:hover {
+  opacity: 1;
+}
+
+/* ===== PRODUCT PAGE ===== */
+.product-page {
+  display: flex;
+  max-width: 1200px;
+  margin: 80px auto;
+  gap: 60px;
+  padding: 0 40px;
+}
+
+/* ===== LEFT COLUMN: DESCRIPTION ===== */
+.product-description {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.product-description h2 {
+  margin-bottom: 20px;
+}
+
+.product-description h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* ===== RIGHT COLUMN: GALLERY + INFO ===== */
+.product-info {
+  flex: 1;
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.thumbs img {
+  width: 60px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.main-image img {
+  width: 400px;
+  border: 1px solid #fff;
+}
+
+.info h1 {
+  font-size: 32px;
+  margin: 0 0 10px 0;
+}
+
+.price {
+  font-size: 22px;
+  margin: 10px 0 20px 0;
+}
+
+.colors {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.color {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.black { background: #000; }
+.white { background: #fff; }
+
+.sizes button {
+  padding: 8px 14px;
+  margin-right: 10px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.buy {
+  margin: 20px 0;
+  padding: 14px;
+  width: 100%;
+  background: #3b1f12;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.footer {
+    border-top: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.payments img {
+    height: 20px;
+    margin: 0 5px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+ol, ul {
+  margin-left: 20px;
+}
+.buy {
+    margin: 20px 0;
+    padding: 16px;
+    width: 100%;
+    background: #fff; /* білий фон */
+    color: #000; /* чорний текст */
+    border: none;
+    font-size: 20px; /* великий шрифт */
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 6px; /* закруглення кутів */
+    transition: all 0.3s ease;
+}
+
+.buy:hover {
+    background: #f0f0f0; /* легка зміна кольору при наведенні */
+}
+
+</style>
+<script>
+function changeImg(src) {
+  document.getElementById('mainImg').src = src;
+}
+</script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <nav class="nav">
+    <div class="nav-center">
+      <a href="Website.html">Главная</a>
+      <a href="Website2.html">Каталог</a>
+      <a href="Website3.html">Контакты для покупки</a>
+    </div>
+  </nav>
+</header>
+
+<!-- PRODUCT PAGE -->
+<div class="product-page">
+  
+  <!-- LEFT COLUMN: DESCRIPTION -->
+  <div class="product-description">
+    
+    <h2>Описание футболки</h2>
+    
+    <h3>Состав:</h3>
+    <p>- 95% хлопок, 5% лайкра</p>
+    <p>- Все принты: объёмная промышленная вышивка</p>
+    
+    <h3>Размеры (рекомендации):</h3>
+    <p>1 - (S-M) рост до 175 см</p>
+    <p>2 - (L-XL) рост от 175 см</p>
+    
+    <h3>Уход за футболкой:</h3>
+    <p><strong>Ручная стирка:</strong></p>
+    <ol>
+      <li>Вывернуть изделие наизнанку — так вышивка меньше трется о ткань.</li>
+      <li>Использовать мягкие моющие средства для деликатных тканей, лучше без отбеливателя.</li>
+      <li>Не тереть и не выкручивать вышивку — это может её повредить.</li>
+    </ol>
+    
+    <p><strong>Машинная стирка:</strong></p>
+    <ol>
+      <li>Выбрать деликатный режим («Шерсть», «Деликатная стирка» или «Ручная стирка»).</li>
+      <li>Температура воды не выше 30–40°C.</li>
+      <li>Отключить отжим или выбрать минимальный режим.</li>
+      <li>Если вышивка тонкая или объёмная, использовать мешок для стирки.</li>
+    </ol>
+    
+    <p><strong>Что нельзя использовать:</strong></p>
+    <ul>
+      <li>Агрессивные средства с отбеливателем.</li>
+      <li>Стирать вместе с вещами с металлическим декором, молниями или крючками.</li>
+    </ul>
+    
+  </div>
+  
+  <!-- RIGHT COLUMN: GALLERY + INFO -->
+  <div class="product-info">
+    <div class="gallery">
+      <div class="thumbs">
+        <img src="face.png" onclick="changeImg(this.src)">
+        <img src="back.png" onclick="changeImg(this.src)">
+      </div>
+      <div class="main-image">
+        <img id="mainImg" src="face.png">
+      </div>
+    </div>
+    
+    <div class="info">
+      <h1>Never</h1>            
+      <p class="price">2 000 ₽</p>
+      <div class="colors">
+        <span class="color black"></span>
+        <span class="color white"></span>
+      </div>
+      <div class="sizes">
+        <button>M</button>
+        <button>XL</button>
+        <button>XXL</button>
+      </div>
+     <button class="buy" onclick="window.location.href='Website3.html'">Купить</button>
+    </div>
+    
+  </div>
+  
+</div>
+
+<footer class="footer">
+    <div class="payments">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="AmEx">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+    </div>
+
+    <div class="footer-links">
+        © 2026, covered in darkness ·
+        <a href="#">Privacy policy</a> ·
+        <a href="#">Terms of service</a> ·
+        <a href="#">Refund policy</a>
+    </div>
+</footer>
+</body>
+</html>
